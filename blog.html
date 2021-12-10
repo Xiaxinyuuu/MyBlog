@@ -40,7 +40,108 @@
 
     <!--中间内容-->
     <div class="m-padded-tb-big">
-        
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <div class="ui mini horizontal link list">
+                    <!--horizontal link list 设置横向列表-->
+                    <div class="item">
+                        <img src="https://s1.ax1x.com/2021/12/10/o52D1O.jpg" alt="" class="ui avatar image">
+                        <div class="content">
+                            <a href="#" class="header">夏新宇</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i> 2020-12-10
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i> 6666
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <!--图片区域-->
+                <img src="https://s1.ax1x.com/2021/12/10/o52D1O.jpg" alt="" class="ui fluid rounded image">
+            </div>
+            <div class="ui attached padded segment">
+                <!--内容-->
+                <div class="ui right aligned basic segment">
+                    <!--basic去掉segment边线-->
+                    <div class="ui basic orange label">原创</div>
+                </div>
+                <h2 class="ui center aligned header">最大公约数</h2>
+                <div id="content" class="m-padded-lr m-padded-tb-large">
+                    <br>
+                    <br>
+                    <p>作者 &#xff1a; Xia Xinyu<br /> 日期 : 2021-12-04</p>
+                    <h2><a id="httpswwwacwingcomproblemcontent4086_2"></a><a href="https://www.acwing.com/problem/content/4086/">原题链接</a></h2>
+                    </blockquote>
+                    <h2><a id="_n__a1a2an_4"></a>给定一个长度为 n 的整数序列 a1,a2,…,an。</h2>
+                    <p>请你从中选出尽可能多的数。</p>
+                    <p>要求满足如下两个条件之一&#xff1a;</p>
+                    <p>仅选择一个数&#xff1b;<br /> 选择至少两个数&#xff0c;且所选择的数的最大公约数大于 1&#xff1b;<br /> 输出选出数的最大可能数量。</p>
+                    <p>输入格式<br /> 第一行包含整数 n。</p>
+                    <p>第二行包含 n 个整数 a1,a2,…,an。</p>
+                    <p>输出格式<br /> 一个整数&#xff0c;表示选出数的最大可能数量。</p>
+                    <p>数据范围<br /> 前 6 个测试点满足 1≤n≤10。<br /> 所有测试点满足 1≤n≤105&#xff0c;1≤ai≤105。</p>
+                    <p>输入样例1&#xff1a;</p>
+                    <blockquote>
+                        <p>3<br /> 2 3 4</p>
+                    </blockquote>
+                    <p>输出样例1&#xff1a;</p>
+                    <blockquote>
+                        <p>2</p>
+                    </blockquote>
+                    <p>输入样例2&#xff1a;</p>
+                    <blockquote>
+                        <p>5<br /> 2 3 4 6 7</p>
+                    </blockquote>
+                    <p>输出样例2&#xff1a;</p>
+                    <blockquote>
+                        <p>3</p>
+                    </blockquote>
+                    <pre><code class="prism language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span><span class="token punctuation">{<!-- --></span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{<!-- --></span>
+        <span class="token class-name">Scanner</span> in <span class="token operator">&#61;</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token class-name">N</span> <span class="token operator">&#61;</span> <span class="token number">100010</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> cnt <span class="token operator">&#61;</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token class-name">N</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">&#61;</span> in<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">&#61;</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span>i <span class="token operator">&#43;&#43;</span><span class="token punctuation">)</span><span class="token punctuation">{<!-- --></span>
+            <span class="token keyword">int</span> x <span class="token operator">&#61;</span> in<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            cnt<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">&#43;&#43;</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> res <span class="token operator">&#61;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> d <span class="token operator">&#61;</span> <span class="token number">2</span><span class="token punctuation">;</span>d <span class="token operator">&lt;</span> <span class="token class-name">N</span><span class="token punctuation">;</span>d <span class="token operator">&#43;&#43;</span><span class="token punctuation">)</span><span class="token punctuation">{<!-- --></span>
+            <span class="token keyword">int</span> s <span class="token operator">&#61;</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">&#61;</span> d<span class="token punctuation">;</span>j <span class="token operator">&lt;</span> <span class="token class-name">N</span><span class="token punctuation">;</span>j <span class="token operator">&#43;&#61;</span> d<span class="token punctuation">)</span>
+                s <span class="token operator">&#43;&#61;</span> cnt<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            res <span class="token operator">&#61;</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                    <p><code>时间复杂度</code>&#xff1a;O(n)<br /> <code>空间复杂度</code>&#xff1a;O(1)</p>
+                </div>
+                <!--标签-->
+                <div class="m-padded-lr">
+                    <div class="ui basic teal left pointing label">
+                        方法论
+                    </div>
+                </div>
+                <!--赞赏-->
+                <div class="ui center aligned segment">
+                    <button class="ui orange basic circular button m-padded-lr">赞赏</button>
+                </div>
+
+            </div>
+            <div class="ui attached positive message">
+                <!--博客信息-->
+            </div>
+            <div class="ui bottom attached segment">
+                <!--留言区域-->
+            </div>
+        </div>
     </div>
 
     <br>
