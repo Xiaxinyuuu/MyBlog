@@ -90,3 +90,25 @@
 .m-black {
     color: #333 !important;
 }
+
+/*position*/
+.m-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*媒体查询*/
+
+.m-mobile-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .m-mobile-hide{
+        display: none !important;
+    }
+    .m-mobile-show{
+        display: block !important;
+    }
+}
