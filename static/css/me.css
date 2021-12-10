@@ -1,3 +1,7 @@
+body{
+    background-image: url("../images/bg.png");
+    background-size: contain;
+}
 
 .m-padded-mini {
     padding: 0.2em !important;
