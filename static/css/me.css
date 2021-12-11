@@ -97,6 +97,11 @@ body{
     padding-right: 4em !important;
 }
 
+/*shadow*/
+.m-shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important; /*适配谷歌等浏览器*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
 
 
 /*color*/
