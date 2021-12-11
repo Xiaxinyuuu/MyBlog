@@ -1,7 +1,11 @@
 body{
     background-image: url("../images/bg.png");
-    background-size: contain;
+    position:absolute;left:0;top:0;width: 100%;height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
+/*只是内容在变化，背景图片保持不变*/
+
 
 .m-padded-mini {
     padding: 0.2em !important;
