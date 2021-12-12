@@ -1,5 +1,0 @@
-spring:
-  thymeleaf:
-    mode: HTML
-  profiles:
-    active: pro  #指定使用哪个配置文件，使用后缀名即可

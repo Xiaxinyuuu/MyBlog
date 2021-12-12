@@ -86,18 +86,18 @@
     text-align: left;
 }
 
-.typo q:before,.typo  q:after {
+.typo q:before, .typo q:after {
     content: '';
 }
 
 /* 统一上标和下标 */
-.typo sub,.typo  sup {
+.typo sub, .typo sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
 }
 
-.typo :root sub,.typo  :root sup {
+.typo :root sub, .typo :root sup {
     vertical-align: baseline; /* for ie9 and other modern browsers */
 }
 
@@ -129,7 +129,7 @@
 }
 
 /* 默认不显示下划线，保持页面简洁 */
-.typo ins,.typo  a {
+.typo ins, .typo a {
     text-decoration: none;
 }
 
@@ -139,7 +139,7 @@
  * 被放弃的是 4，之前一直搞错 http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
  * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/
  */
-.typo u,.typo  .typo-u {
+.typo u, .typo .typo-u {
     text-decoration: underline;
 }
 
@@ -152,7 +152,7 @@
 }
 
 /* 代码片断 */
-.typo pre,.typo  code,.typo  pre tt {
+.typo pre, .typo code, .typo pre tt {
     font-family: Courier, 'Courier New', monospace;
 }
 
@@ -173,14 +173,14 @@
 }
 
 /* 底部印刷体、版本等标记 */
-.typo small,.typo  .typo-small,
+.typo small, .typo .typo-small,
     /* 图片说明 */
 .typo figcaption {
     font-size: 0.9em;
     color: #888;
 }
 
-.typo strong,.typo  b {
+.typo strong, .typo b {
     font-weight: bold;
     color: #000;
 }
@@ -190,7 +190,7 @@
     cursor: move;
 }
 
-.typo .clearfix:before,.typo  .clearfix:after {
+.typo .clearfix:before, .typo .clearfix:after {
     content: "";
     display: table;
 }
@@ -204,7 +204,7 @@
 }
 
 /* 强制文本换行 */
-.typo .textwrap,.typo .textwrap td,.typo  .textwrap th {
+.typo .textwrap, .typo .textwrap td, .typo .textwrap th {
     word-wrap: break-word;
     word-break: break-all;
 }
@@ -224,7 +224,7 @@
     margin-bottom: 1.2em
 }
 
-.typo h1,.typo  h2,.typo  h3,.typo  h4,.typo  h5,.typo  h6 {
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6 {
     font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
     font-weight: 100;
     color: #000;
