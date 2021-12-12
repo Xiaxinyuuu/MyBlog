@@ -59,7 +59,7 @@
 2021-12-12 18:04:24.685 ERROR 9317 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -143,7 +143,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:04:26.350 ERROR 9317 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -198,7 +198,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:04:27.140 ERROR 9317 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -253,7 +253,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:04:27.841 ERROR 9317 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -308,7 +308,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:04:28.012 ERROR 9317 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -444,7 +444,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:20:27.650 ERROR 9317 --- [http-nio-8080-exec-1] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -500,7 +500,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:20:28.983 ERROR 9317 --- [http-nio-8080-exec-2] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -556,7 +556,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:20:53.187 ERROR 9317 --- [http-nio-8080-exec-3] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -612,7 +612,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:20:53.612 ERROR 9317 --- [http-nio-8080-exec-4] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -668,7 +668,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:20:53.881 ERROR 9317 --- [http-nio-8080-exec-5] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -779,7 +779,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:25:36.769 ERROR 9317 --- [http-nio-8080-exec-1] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -835,7 +835,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:37:04.638 ERROR 9317 --- [http-nio-8080-exec-4] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -891,7 +891,7 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:37:05.248 ERROR 9317 --- [http-nio-8080-exec-5] c.x.m.hander.ControllerExceptionHandler  : Request URL : /, Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.xiaxinyu.myblog.indexController.index(indexController.java:10) ~[classes/:na]
+	at com.xiaxinyu.myblog.web.indexController.index(indexController.java:10) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
@@ -1002,3 +1002,224 @@ java.lang.ArithmeticException: / by zero
 2021-12-12 18:37:16.345  WARN 9317 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.xiaxinyu.myblog.NotFoundException: 博客不存在]
 2021-12-12 18:37:17.082  WARN 9317 --- [http-nio-8080-exec-2] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.xiaxinyu.myblog.NotFoundException: 博客不存在]
 2021-12-12 18:37:17.284  WARN 9317 --- [http-nio-8080-exec-3] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.xiaxinyu.myblog.NotFoundException: 博客不存在]
+2021-12-12 19:17:05.144  WARN 9317 --- [HikariPool-10 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=37m49s218ms).
+2021-12-12 19:41:10.901  INFO 9317 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 19:41:10.904  INFO 9317 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2021-12-12 19:41:10.911  INFO 9317 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2021-12-12 19:59:01.135  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 10053 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-12 19:59:01.138 DEBUG 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-12 19:59:01.139  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-12 19:59:01.199  INFO 10053 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 19:59:01.199  INFO 10053 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 19:59:02.077  INFO 10053 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-12 19:59:02.092  INFO 10053 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-12-12 19:59:02.948  INFO 10053 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-12 19:59:02.957  INFO 10053 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 19:59:02.958  INFO 10053 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-12 19:59:03.025  INFO 10053 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 19:59:03.025  INFO 10053 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1825 ms
+2021-12-12 19:59:03.231  INFO 10053 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 19:59:03.287  INFO 10053 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-12 19:59:03.530  INFO 10053 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 19:59:03.613  INFO 10053 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 19:59:03.614  WARN 10053 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-12 19:59:03.893  INFO 10053 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 19:59:03.916  INFO 10053 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 19:59:04.125  INFO 10053 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 19:59:04.138  INFO 10053 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 19:59:04.235  WARN 10053 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 19:59:04.687  INFO 10053 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-12 19:59:05.078  INFO 10053 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 19:59:05.128  INFO 10053 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-12 19:59:05.146  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 4.478 seconds (JVM running for 5.278)
+2021-12-12 19:59:09.609  INFO 10053 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 19:59:09.610  INFO 10053 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 19:59:09.611  INFO 10053 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-12 20:00:00.037  INFO 10053 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:00:00.046  INFO 10053 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 20:00:00.060  INFO 10053 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-12 20:00:00.395  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 10053 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-12 20:00:00.395 DEBUG 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-12 20:00:00.395  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-12 20:00:00.773  INFO 10053 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-12 20:00:00.777  INFO 10053 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2021-12-12 20:00:01.036  INFO 10053 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-12 20:00:01.038  INFO 10053 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 20:00:01.038  INFO 10053 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-12 20:00:01.050  INFO 10053 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 20:00:01.050  INFO 10053 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
+2021-12-12 20:00:01.214  INFO 10053 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 20:00:01.220  INFO 10053 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-12 20:00:01.220  WARN 10053 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-12 20:00:01.272  INFO 10053 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-12 20:00:01.273  INFO 10053 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 20:00:01.416  INFO 10053 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 20:00:01.416  INFO 10053 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:00:01.546  WARN 10053 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 20:00:01.884  INFO 10053 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-12 20:00:02.124  INFO 10053 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 20:00:02.142  INFO 10053 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-12 20:00:02.148  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 1.799 seconds (JVM running for 62.28)
+2021-12-12 20:00:02.150  INFO 10053 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-12 20:00:03.549  INFO 10053 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:00:03.550  INFO 10053 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-12-12 20:00:03.557  INFO 10053 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-12-12 20:00:03.720  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 10053 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-12 20:00:03.720 DEBUG 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-12 20:00:03.720  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-12 20:00:03.846  INFO 10053 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-12 20:00:03.847  INFO 10053 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-12-12 20:00:03.957  INFO 10053 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-12 20:00:03.958  INFO 10053 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 20:00:03.958  INFO 10053 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-12 20:00:03.965  INFO 10053 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 20:00:03.966  INFO 10053 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 243 ms
+2021-12-12 20:00:04.017  INFO 10053 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 20:00:04.020  INFO 10053 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-12-12 20:00:04.020  WARN 10053 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-12 20:00:04.035  INFO 10053 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-12-12 20:00:04.035  INFO 10053 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 20:00:04.043  INFO 10053 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 20:00:04.044  INFO 10053 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:00:04.083  WARN 10053 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 20:00:04.241  INFO 10053 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-12 20:00:04.409  INFO 10053 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 20:00:04.421  INFO 10053 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-12 20:00:04.425  INFO 10053 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 0.729 seconds (JVM running for 64.557)
+2021-12-12 20:00:04.426  INFO 10053 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-12 20:00:07.297  INFO 10053 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 20:00:07.298  INFO 10053 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 20:00:07.299  INFO 10053 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-12 20:00:07.331  INFO 10053 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : -----doBefore-----
+2021-12-12 20:00:07.342  INFO 10053 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : Result : {}index
+2021-12-12 20:00:07.342  INFO 10053 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : -----doAfter-----
+2021-12-12 20:00:53.658  INFO 10053 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : -----doBefore-----
+2021-12-12 20:00:53.659  INFO 10053 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Result : {}index
+2021-12-12 20:00:53.659  INFO 10053 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : -----doAfter-----
+2021-12-12 20:01:58.046  INFO 10053 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:01:58.047  INFO 10053 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-12-12 20:01:58.052  INFO 10053 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-12-12 20:02:01.293  INFO 10107 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 10107 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-12 20:02:01.294 DEBUG 10107 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-12 20:02:01.295  INFO 10107 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-12 20:02:01.327  INFO 10107 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 20:02:01.328  INFO 10107 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 20:02:01.824  INFO 10107 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-12 20:02:01.836  INFO 10107 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-12-12 20:02:02.520  INFO 10107 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-12 20:02:02.528  INFO 10107 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 20:02:02.529  INFO 10107 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-12 20:02:02.604  INFO 10107 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 20:02:02.604  INFO 10107 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2021-12-12 20:02:02.791  INFO 10107 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 20:02:02.834  INFO 10107 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-12 20:02:03.081  INFO 10107 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 20:02:03.147  INFO 10107 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 20:02:03.149  WARN 10107 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-12 20:02:03.387  INFO 10107 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 20:02:03.401  INFO 10107 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 20:02:03.541  INFO 10107 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 20:02:03.549  INFO 10107 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:02:03.631  WARN 10107 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 20:02:03.900  INFO 10107 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-12 20:02:04.179  INFO 10107 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 20:02:04.233  INFO 10107 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-12 20:02:04.243  INFO 10107 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 3.262 seconds (JVM running for 3.834)
+2021-12-12 20:02:05.145  INFO 10107 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 20:02:05.145  INFO 10107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 20:02:05.146  INFO 10107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-12 20:02:05.224  INFO 10107 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : -----doBefore-----
+2021-12-12 20:02:05.233  INFO 10107 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : Result : index
+2021-12-12 20:02:05.233  INFO 10107 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : -----doAfter-----
+2021-12-12 20:03:44.308  INFO 10107 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:03:44.311  INFO 10107 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 20:03:44.315  INFO 10107 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-12 20:04:25.962  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 10164 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-12 20:04:25.964 DEBUG 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-12 20:04:25.964  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-12 20:04:26.026  INFO 10164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 20:04:26.027  INFO 10164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 20:04:26.854  INFO 10164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-12 20:04:26.872  INFO 10164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-12-12 20:04:27.720  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-12 20:04:27.730  INFO 10164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 20:04:27.731  INFO 10164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-12 20:04:27.795  INFO 10164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 20:04:27.795  INFO 10164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1768 ms
+2021-12-12 20:04:27.992  INFO 10164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 20:04:28.039  INFO 10164 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-12 20:04:28.240  INFO 10164 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 20:04:28.321  INFO 10164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 20:04:28.322  WARN 10164 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-12 20:04:28.636  INFO 10164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 20:04:28.656  INFO 10164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 20:04:28.867  INFO 10164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 20:04:28.878  INFO 10164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:04:28.972  WARN 10164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 20:04:29.304  INFO 10164 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-12 20:04:29.645  INFO 10164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 20:04:29.690  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-12 20:04:29.704  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 4.277 seconds (JVM running for 5.027)
+2021-12-12 20:04:29.760  INFO 10164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 20:04:29.760  INFO 10164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 20:04:29.761  INFO 10164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-12 20:04:34.347  INFO 10164 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : -----doBefore-----
+2021-12-12 20:04:34.358  INFO 10164 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Result : index
+2021-12-12 20:04:34.358  INFO 10164 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : -----doAfter-----
+2021-12-12 20:13:20.239  INFO 10164 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:13:20.243  INFO 10164 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 20:13:20.250  INFO 10164 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-12 20:13:20.504  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 10164 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-12 20:13:20.505 DEBUG 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-12 20:13:20.505  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-12 20:13:20.717  INFO 10164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-12 20:13:20.720  INFO 10164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2021-12-12 20:13:20.935  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-12 20:13:20.936  INFO 10164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 20:13:20.936  INFO 10164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-12 20:13:20.951  INFO 10164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 20:13:20.951  INFO 10164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 443 ms
+2021-12-12 20:13:21.039  INFO 10164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 20:13:21.044  INFO 10164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-12 20:13:21.044  WARN 10164 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-12 20:13:21.067  INFO 10164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-12 20:13:21.067  INFO 10164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 20:13:21.079  INFO 10164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 20:13:21.080  INFO 10164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:13:21.134  WARN 10164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 20:13:21.378  INFO 10164 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-12 20:13:21.578  INFO 10164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 20:13:21.595  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-12 20:13:21.600  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 1.147 seconds (JVM running for 536.908)
+2021-12-12 20:13:21.603  INFO 10164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-12 20:13:22.996  INFO 10164 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:13:22.997  INFO 10164 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-12-12 20:13:23.002  INFO 10164 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-12-12 20:13:23.147  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 10164 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-12 20:13:23.148 DEBUG 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-12 20:13:23.149  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-12 20:13:23.268  INFO 10164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-12 20:13:23.269  INFO 10164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-12-12 20:13:23.373  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-12 20:13:23.374  INFO 10164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 20:13:23.374  INFO 10164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-12 20:13:23.380  INFO 10164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 20:13:23.380  INFO 10164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 229 ms
+2021-12-12 20:13:23.428  INFO 10164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 20:13:23.431  INFO 10164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-12-12 20:13:23.431  WARN 10164 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-12 20:13:23.444  INFO 10164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-12-12 20:13:23.445  INFO 10164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 20:13:23.453  INFO 10164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 20:13:23.454  INFO 10164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:13:23.490  WARN 10164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 20:13:23.652  INFO 10164 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-12 20:13:23.816  INFO 10164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 20:13:23.827  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-12 20:13:23.830  INFO 10164 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 0.706 seconds (JVM running for 539.139)
+2021-12-12 20:13:23.832  INFO 10164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-12 20:13:33.740  INFO 10164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 20:13:33.741  INFO 10164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 20:13:33.742  INFO 10164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-12 20:13:33.754  INFO 10164 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/1/sss', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.indexController.index', args=[1, sss]}
+2021-12-12 20:13:33.758  INFO 10164 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : Result : index
