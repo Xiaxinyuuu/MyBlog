@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./static/css/animate.css">
     <link rel="stylesheet" href="./static/css/typo.css"/>
     <link rel="stylesheet" href="./static/lib/prism/prism.css">
+    <link rel="stylesheet" href="./static/lib/tocbot/tocbot.css">
+    <!--必须在引入typo之后再引入prism，否则代码高亮不能正确显示-->
     <link rel="stylesheet" href="./static/css/me.css">
 </head>
 <body>
@@ -73,7 +75,7 @@
                 </div>
 
                 <h2 class="ui center aligned header">最大公约数</h2>
-                <div id="content" class="typo  typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+                <div id="content" class="typo  typo-selection js-toc-content js-toc-content m-padded-lr-responsive m-padded-tb-large">
 
                     <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
@@ -476,7 +478,7 @@ h5,h6{font-size:1em;}
                     </div>
                 </div>
             </div>
-            <div class="ui bottom attached segment">
+            <div id = "comment-container" class="ui bottom attached segment">
                 <!--留言区域列表-->
                 <div class="ui teal segment">
                     <div class="ui comments">
@@ -588,6 +590,22 @@ h5,h6{font-size:1em;}
     <br>
     <br>
 
+    <!--工具条-->
+    <div class="m-padded m-fixed m-right-bottom">
+        <div class="ui vertical icon buttons">
+            <button type="button" class="ui toc teal button">目录</button>
+            <a type="button" class="ui teal button">留言</a>
+            <button type="button" class="ui icon button"><i class="weixin icon"></i></button>
+            <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
+        </div>
+    </div>
+
+    <div class="ui toc-container flowing popup transition hidden">
+        <ol class="js-toc" style="width: 250px !important;">
+
+        </ol>
+    </div>
+
     <!--底部footer-->
     <footer class="ui inverted attached segment m-padded-tb-massive">
             <div class="ui center aligned container">
@@ -632,9 +650,19 @@ h5,h6{font-size:1em;}
 <script src="./static/lib/prism/prism.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="./static/lib/tocbot/tocbot.js"></script>
     <script>
         $('.menu.toggle').click(function(){
             $(".m-item").toggleClass('m-mobile-hide');
+        });
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.js-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.js-toc-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
         });
 
         $('#payButton').popup({
@@ -642,6 +670,14 @@ h5,h6{font-size:1em;}
             on: 'click',
             position: 'bottom center'
         });
+
+        $('.toc.button').popup({
+            popup:$('.toc-container.popup'),
+            on: 'click',
+            position: 'left center'
+        });
+
+
     </script>
 </body>
 </html>

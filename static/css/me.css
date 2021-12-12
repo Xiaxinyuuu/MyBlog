@@ -6,7 +6,9 @@ body{
 }
 /*只是内容在变化，背景图片保持不变*/
 
-
+.m-padded {
+    padding: 1em !important;
+}
 .m-padded-mini {
     padding: 0.2em !important;
 }
@@ -119,6 +121,16 @@ body{
     top: 0;
     right: 0;
 }
+.m-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.m-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
 
 /*媒体查询*/
 
