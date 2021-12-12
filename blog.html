@@ -44,7 +44,7 @@
     </nav>
 
     <!--中间内容-->
-    <div class="m-padded-tb-big animated fadeIn">
+    <div id="waypoint" class="m-padded-tb-big animated fadeIn">
         <div class="ui container">
             <div class="ui top attached segment">
                 <div class="ui mini horizontal link list">
@@ -591,7 +591,8 @@ h5,h6{font-size:1em;}
     <br>
 
     <!--工具条-->
-    <div class="m-padded m-fixed m-right-bottom">
+    <div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display : none">
+        <!--style="display : none默认隐藏-->
         <div class="ui vertical icon buttons">
             <button type="button" class="ui toc teal button">目录</button>
             <a type="button" class="ui teal button">留言</a>
@@ -656,6 +657,7 @@ h5,h6{font-size:1em;}
 <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <!--scrollTo依赖jquery，所以必须先引入jaquery-->
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="./static/lib/waypoints/jquery.waypoints.min.js"></script>
 <script src="./static/lib/prism/prism.js"></script>
 <script src="./static/lib/tocbot/tocbot.js"></script>
 <script src="./static/lib/qrcode/qrcode.min.js"></script>
@@ -704,6 +706,18 @@ h5,h6{font-size:1em;}
         $('#toTop-button').click(function (){
             $(window).scrollTo(0,1000);
         });
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('waypoint'),
+            handler: function(direction) {
+                if (direction == 'down') {
+                    $('#toolbar').show(500);
+                } else {
+                    $('#toolbar').hide(500);
+                }
+                console.log('Scrolled to waypoint!  ' + direction);
+            }
+        })
 
     </script>
 </body>
