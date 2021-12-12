@@ -1,0 +1,20 @@
+spring:
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: xiaxinyv6
+
+  jpa:
+    hibernate:
+      ddl-auto: update  #每次连接数据库时，比对实体对象与数据库映射是否对应，若不对应则更新表结构
+    show-sql: true  #在控制台和日志输出sql语句
+
+logging:
+  level:
+    root: info
+    com.xiaxinyu.myblog: debug
+  file:
+    name: log/MyBlog-dev.log
+

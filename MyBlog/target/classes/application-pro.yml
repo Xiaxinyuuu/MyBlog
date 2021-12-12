@@ -1,0 +1,22 @@
+spring:
+  thymeleaf:
+    mode: HTML
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: xiaxinyv6
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true  #在控制台和日志输出sql语句
+
+logging:
+  level:
+    root: warn
+    com.xiaxinyu.myblog: info
+  file:
+    name: log/MyBlog-pro.log
+
