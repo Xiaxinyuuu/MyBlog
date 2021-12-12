@@ -595,7 +595,7 @@ h5,h6{font-size:1em;}
         <div class="ui vertical icon buttons">
             <button type="button" class="ui toc teal button">目录</button>
             <a type="button" class="ui teal button">留言</a>
-            <button type="button" class="ui icon button"><i class="weixin icon"></i></button>
+            <button type="button" class="ui wechat icon button"><i class="weixin icon"></i></button>
             <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
         </div>
     </div>
@@ -604,6 +604,11 @@ h5,h6{font-size:1em;}
         <ol class="js-toc" style="width: 250px !important;">
 
         </ol>
+    </div>
+
+    <div id="qrcode" class="ui wechatQR flowing popup transition hidden" style="width: 130px !important;">
+<!--        <img src="./static/images/wechat.png" alt="" class="ui rounded image" style="width: 120px">-->
+
     </div>
 
     <!--底部footer-->
@@ -651,6 +656,8 @@ h5,h6{font-size:1em;}
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <script src="./static/lib/tocbot/tocbot.js"></script>
+<script src="./static/lib/qrcode/qrcode.min.js"></script>
+
     <script>
         $('.menu.toggle').click(function(){
             $(".m-item").toggleClass('m-mobile-hide');
@@ -677,6 +684,20 @@ h5,h6{font-size:1em;}
             position: 'left center'
         });
 
+        $('.wechat').popup({
+            popup : $('.wechatQR'),
+            // on : 'click',
+            position: 'left center'
+        });
+
+        var qrcode = new QRCode("qrcode", {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 110,
+            height: 110,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
 
     </script>
 </body>
