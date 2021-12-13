@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <recent name="com.xiaxinyu.myblog" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -81,13 +81,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="404.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/error/404.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="500.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/error/500.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="error.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/error/error.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/login.html" useBuiltInWebServerPort="true">
@@ -115,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="Spring Boot.MyBlogApplication" />
         <item itemvalue="JavaScript Debug.error.html" />
         <item itemvalue="JavaScript Debug.500.html" />
-        <item itemvalue="JavaScript Debug.404.html" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +134,7 @@
       <workItem from="1639302887760" duration="53000" />
       <workItem from="1639302992811" duration="3748000" />
       <workItem from="1639310656222" duration="10721000" />
-      <workItem from="1639387852965" duration="863000" />
+      <workItem from="1639387852965" duration="1818000" />
     </task>
     <servers />
   </component>
