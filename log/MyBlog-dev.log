@@ -1066,3 +1066,29 @@ java.lang.ArithmeticException: / by zero
 2021-12-13 10:58:39.004  INFO 14140 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-12-13 10:58:39.008  INFO 14140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-12-13 10:58:39.014  INFO 14140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-13 17:32:26.278  INFO 15995 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMBP with PID 15995 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-13 17:32:26.279 DEBUG 15995 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-13 17:32:26.280  INFO 15995 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-13 17:32:26.352  INFO 15995 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 17:32:26.353  INFO 15995 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 17:32:27.158  INFO 15995 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 17:32:27.178  INFO 15995 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2021-12-13 17:32:28.005  INFO 15995 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 17:32:28.013  INFO 15995 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 17:32:28.014  INFO 15995 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-13 17:32:28.074  INFO 15995 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 17:32:28.074  INFO 15995 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1720 ms
+2021-12-13 17:32:28.281  INFO 15995 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 17:32:28.339  INFO 15995 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-13 17:32:28.537  INFO 15995 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 17:32:28.618  INFO 15995 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 17:32:28.620  WARN 15995 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-13 17:32:28.914  INFO 15995 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 17:32:28.932  INFO 15995 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-13 17:32:29.826  INFO 15995 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 17:32:29.834  INFO 15995 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 17:32:29.939  WARN 15995 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 17:32:30.278  INFO 15995 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 17:32:30.579  INFO 15995 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 17:32:30.623  INFO 15995 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 17:32:30.633  INFO 15995 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 4.82 seconds (JVM running for 5.543)
