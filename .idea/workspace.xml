@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaxinyu/myblog/web/indexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发文档.md" afterDir="false" />
-    </list>
+    <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,6 +130,7 @@
       <workItem from="1639302887760" duration="53000" />
       <workItem from="1639302992811" duration="3748000" />
       <workItem from="1639310656222" duration="10721000" />
+      <workItem from="1639387852965" duration="275000" />
     </task>
     <servers />
   </component>

@@ -1092,3 +1092,6 @@ java.lang.ArithmeticException: / by zero
 2021-12-13 17:32:30.579  INFO 15995 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2021-12-13 17:32:30.623  INFO 15995 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2021-12-13 17:32:30.633  INFO 15995 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 4.82 seconds (JVM running for 5.543)
+2021-12-13 17:40:04.609  INFO 15995 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 17:40:04.620  INFO 15995 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-13 17:40:04.652  INFO 15995 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
