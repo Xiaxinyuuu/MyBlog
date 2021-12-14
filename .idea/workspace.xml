@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/log/MyBlog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/MyBlog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
       <recent name="com.xiaxinyu.myblog" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MyBlogApplication">
+  <component name="RunManager" selected="JavaScript Debug.types.html">
     <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xiaxinyu.myblog.util.MD5Utils" />
       <module name="myblog" />
@@ -94,13 +95,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="error.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/error/error.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="types.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/types.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -125,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.types.html" />
         <item itemvalue="Spring Boot.MyBlogApplication" />
         <item itemvalue="Application.MD5Utils" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.error.html" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +145,7 @@
       <workItem from="1639302887760" duration="53000" />
       <workItem from="1639302992811" duration="3748000" />
       <workItem from="1639310656222" duration="10721000" />
-      <workItem from="1639387852965" duration="7256000" />
+      <workItem from="1639387852965" duration="7573000" />
     </task>
     <servers />
   </component>
