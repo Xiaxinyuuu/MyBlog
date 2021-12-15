@@ -7,16 +7,9 @@
     <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/MyBlog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/MyBlog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myblog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/po/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/po/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +64,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/admin" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
@@ -78,7 +72,7 @@
       <recent name="com.xiaxinyu.myblog" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MyBlogApplication">
+  <component name="RunManager" selected="JavaScript Debug.blogs.html">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -95,7 +89,7 @@
     <configuration name="_fragments.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/_fragments.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="blogs-input.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/blogs-input.html" useBuiltInWebServerPort="true">
+    <configuration name="blogs.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/blogs.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="types-input.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/types-input.html" useBuiltInWebServerPort="true">
@@ -126,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.blogs.html" />
         <item itemvalue="Spring Boot.MyBlogApplication" />
         <item itemvalue="JavaScript Debug.types-input.html" />
         <item itemvalue="JavaScript Debug.types.html" />
         <item itemvalue="JavaScript Debug._fragments.html" />
-        <item itemvalue="JavaScript Debug.blogs-input.html" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +139,7 @@
       <workItem from="1639302887760" duration="53000" />
       <workItem from="1639302992811" duration="3748000" />
       <workItem from="1639310656222" duration="10721000" />
-      <workItem from="1639387852965" duration="16982000" />
+      <workItem from="1639387852965" duration="22054000" />
     </task>
     <servers />
   </component>
