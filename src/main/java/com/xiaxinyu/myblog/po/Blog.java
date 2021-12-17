@@ -12,6 +12,9 @@ public class Blog {
     @GeneratedValue
     private Long id; //主键
     private String title; //标题
+
+    @Basic(fetch = FetchType.LAZY)
+    @Lob //大字段类型
     private String content; //内容
     private String firstPicture; //首图
     private String flag; //标记
@@ -50,6 +53,16 @@ public class Blog {
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
 
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    @Transient
+    private String tagIds;
 
     public List<Tag> getTags() {
         return tags;

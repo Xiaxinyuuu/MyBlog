@@ -61,8 +61,7 @@ public class TagServiceImpl implements TagService {
 
     @Override
     public List<Tag> listTag(String ids) { //1,2,3
-//        return tagRepository.findAll(convertToList(ids)); //在TagRepository.java中添加了一个抽象方法
-        return null;
+        return tagRepository.findAllById(convertToList(ids));
     }
 
     /*将字符串转化为集合*/

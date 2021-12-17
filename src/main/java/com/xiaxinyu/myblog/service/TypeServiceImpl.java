@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class TypeServiceImpl implements TypeService{
 
@@ -17,7 +19,7 @@ public class TypeServiceImpl implements TypeService{
     @Autowired
     private TypeRepository typeRepository;
 
-    @Transactional  //增删改查操作都放在事物里
+    @Transactional  //增删改查操作都放在事务里
     @Override
     public Type saveType(Type type) {
         return typeRepository.save(type);
@@ -33,6 +35,11 @@ public class TypeServiceImpl implements TypeService{
     @Override
     public Page<Type> listType(Pageable pageable) {
         return typeRepository.findAll(pageable);
+    }
+
+    @Override
+    public List<Type> listType() {
+        return typeRepository.findAll();
     }
 
     @Transactional

@@ -26,7 +26,7 @@
             <div class="right m-item m-mobile-hide menu">
                 <div class="ui dropdown item">
                     <div class="text">
-                        <img src="../../static/images/images/avatar.png" alt="" class="ui avatar image">
+                        <img src="../../static/images/avatar.png" alt="" class="ui avatar image">
                         小夏
                     </div>
                     <i class="dropdown icon"></i>
@@ -54,23 +54,26 @@
 
 <!--中间内容-->
 <div class="m-padded-tb-big">
-    <div class="ui attached container">
-        <form action="#" method="post" class="ui segment form">
+    <div class="ui container">
+        <div class="ui secondary segment form">
+            <input type="hidden" name="page">
             <div class="inline fields">
                 <div class="field">
                     <input type="text" name="title" placeholder="标题">
                 </div>
                 <div class="field">
                     <div class="ui selection dropdown">
-                        <input type="hidden" name="type">
+                        <input type="hidden" name="typeId">
                         <i class="dropdown icon"></i>
                         <div class="default text">分类</div>
                         <div class="menu">
+                            <div th:each="type : ${types}" th:data-value="${type.id}" th:text="${type.name}" data-value="1" class="item" >错误日志</div>
+                            <!--/*-->
                             <div class="item" data-value="1">错误日志</div>
                             <div class="item" data-value="1">错误日志</div>
                             <div class="item" data-value="1">错误日志</div>
                             <div class="item" data-value="1">错误日志</div>
-                            <div class="item" data-value="1">错误日志</div>
+                            <!--*/-->
                         </div>
                     </div>
                 </div>
@@ -81,14 +84,14 @@
                     </div>
                 </div>
                 <div class="field">
-                    <button class="ui teal basic button"><i class="search icon"></i>搜索</button>
+                    <button type="button" id="search-button" class="ui teal basic button"><i class="search icon"></i>搜索</button>
                 </div>
             </div>
-        </form>
+        </div>
 
-        <!--表格-->
-        <div class="ui attached">
-            <table class="ui celled table">
+        <div id="table-container">
+            <!--表格-->
+            <table th:fragment="blogList" class="ui celled teal table">
                 <!--celled为表格增加网格线-->
                 <thead>
                 <tr>
@@ -101,32 +104,42 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>刻意练习清单</td>
-                    <td>认知升级</td>
-                    <td>是</td>
-                    <td>2020-12-11</td>
+                <tr th:each="blog,iterStat : ${page.content}">
+                    <td th:text="${iterStat.count}">1</td>
+                    <td th:text="${blog.title}">刻意练习清单</td>
+                    <td th:text="${blog.type.name}">认知升级</td>
+                    <td th:text="${blog.recommend} ? '是' : '否'">是</td>
+                    <td th:text="${blog.published} ? '草稿' : '发布'">是</td>
+                    <td th:text="${blog.updateTime}">2020-12-11</td>
                     <td>
-                        <a href="#" class="ui mini teal button">编辑</a>
-                        <a href="#" class="ui mini red button">删除</a>
+                        <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal button">编辑</a>
+                        <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini red button">删除</a>
                     </td>
                 </tr>
                 </tbody>
                 <tfoot>
                 <tr>
-                    <th colspan="6">
-                        <div class="ui pagination menu">
-                            <a class="icon item">上一页</a>
-                            <a class="icon item">下一页</a>
+                    <th colspan="7">
+                        <div class="ui pagination menu" th:if="${page.totalPages}>1">
+                            <a onclick="page(this)" th:attr="data-page=${page.number}-1}" class="item"
+                               th:unless="${page.first}">上一页</a>
+                            <a onclick="page(this)" th:attr="data-page=${page.number}+1}" class="item"
+                               th:unless="${page.last}">下一页</a>
                         </div>
-                        <a href="#" class="ui right floated green button">新增</a>
+                        <a href="#" th:href="@{/admin/blogs/input}" class="ui right floated green button">新增</a>
                         <!--right floated使按钮靠右-->
                     </th>
                 </tr>
                 </tfoot>
             </table>
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${message}">恭喜，操作成功！</p>
+            </div>
+
         </div>
+
 
     </div>
 </div>
@@ -149,7 +162,7 @@
             <div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
-                        <img src="../../static/images/images/wechat.png" class="ui rounded image" alt="" style="width: 100px">
+                        <img src="../../static/images/wechat.png" class="ui rounded image" alt="" style="width: 100px">
                     </div>
                 </div>
                 <!-- ui rounded image使图片变成圆角 -->
@@ -190,7 +203,35 @@
     $('.menu.toggle').click(function () {
         $(".m-item").toggleClass('m-mobile-hide');
     });
-    $('.ui.dropdown').dropdown();
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+
+    function page(obj) {
+        $("[name='page']").val($(obj).data("page"));
+        loaddata();
+    }
+
+    $("#search-button").click(function (){
+       loaddata();
+    });
+
+    //消息提示关闭初始化
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
+
+    function loaddata() {
+        $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
+            title : $("[name='title']").val(),
+            typeId : $("[name='typeId']").val(),
+            recommend : $("[name='recommend']").prop('checked'),
+            page : $("[name='page']").val()
+        });
+    }
 </script>
 </body>
 </html>
