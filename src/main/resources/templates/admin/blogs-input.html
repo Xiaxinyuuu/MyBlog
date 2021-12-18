@@ -101,7 +101,7 @@
 
                 <div class="field">
                     <div class="ui left labeled action input">
-                        <label class="ui compact teal basic label">标签</label>
+                        <label class="ui compact teal  basic label">标签</label>
                         <div class="ui fluid selection multiple search  dropdown">
                             <input type="hidden" name="tagIds">
                             <i class="dropdown icon"></i>
@@ -213,11 +213,11 @@
 </footer>
 
 
-<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-<!--/*/</th:block>/*/-->
 
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
 
 <script>
     //初始化markdown编辑器
@@ -240,6 +240,7 @@
     $('.ui.dropdown').dropdown({
         on : 'hover'
     });
+
 
     $('#sava-button').click(function (){
         $('[name="published"]').val(false);

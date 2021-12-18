@@ -73,6 +73,7 @@ public class TypeController {
         return "admin/types-input";
     }
 
+
     @PostMapping("/types/{id}") //BindingResult和Type之间不能有其他类型的参数，否则校验无效
     public String editPost(@Valid Type type,BindingResult result,@PathVariable Long id, RedirectAttributes attributes){ //接受由html页面传过来的Type对象(包括提交的内容)
         Type type1 = typeService.getTypeByName(type.getName());
