@@ -7,10 +7,14 @@
     <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/MyBlog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/MyBlog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/MyBlog-dev.log.2021-12-12.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/po/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/po/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/TagServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/web/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/web/admin/BlogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaxinyu/myblog/web/admin/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaxinyu/myblog/web/admin/BlogController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,19 +79,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MyBlogApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="blogs-input.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/myblog/templates/admin/blogs-input.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -143,7 +134,8 @@
       <workItem from="1639310656222" duration="10721000" />
       <workItem from="1639387852965" duration="31922000" />
       <workItem from="1639735999486" duration="5487000" />
-      <workItem from="1639828137741" duration="7124000" />
+      <workItem from="1639828137741" duration="7159000" />
+      <workItem from="1640001963016" duration="3771000" />
     </task>
     <servers />
   </component>
@@ -161,5 +153,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
