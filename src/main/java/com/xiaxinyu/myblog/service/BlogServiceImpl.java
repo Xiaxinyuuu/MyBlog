@@ -5,6 +5,7 @@ import com.xiaxinyu.myblog.NotFoundException;
 import com.xiaxinyu.myblog.dao.BlogRepository;
 import com.xiaxinyu.myblog.po.Blog;
 import com.xiaxinyu.myblog.po.Type;
+import com.xiaxinyu.myblog.util.MyBeanUtils;
 import com.xiaxinyu.myblog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.Transient;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -52,7 +54,7 @@ public class BlogServiceImpl implements BlogService{
             }
         },pageable);
     }
-
+    @Transient
     @Override
     public Blog saveBlog(Blog blog) {
         if(blog.getId() == null){
@@ -65,16 +67,19 @@ public class BlogServiceImpl implements BlogService{
         return blogRepository.save(blog);
     }
 
+    @Transient
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog b = blogRepository.getById(id);
         if(b == null){
             throw new NotFoundException("该博客不存在");
         }
-        BeanUtils.copyProperties(b,blog);//把blog的值赋给b
+        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));//把blog的值赋给b,过滤blog中空值
+        b.setUpdateTime(new Date());
         return b;
     }
 
+    @Transient
     @Override
     public void deleteBlog(Long id) {
         blogRepository.deleteById(id);

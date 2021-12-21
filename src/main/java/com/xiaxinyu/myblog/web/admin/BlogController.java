@@ -76,15 +76,20 @@ public class BlogController {
 
     @PostMapping("/blogs")
     public String post(Blog blog, RedirectAttributes attributes, HttpSession session){
-        blog.setUser((User)session.getAttribute("user"));
+        blog.setUser((User) session.getAttribute("user"));
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
-        Blog b = blogService.saveBlog(blog);
-        if(b == null){
-            //保存失败
-            attributes.addFlashAttribute("message","操作失败");
-        }else{
-            attributes.addFlashAttribute("message","操作成功");
+        Blog b;
+        if (blog.getId() == null) {
+            b =  blogService.saveBlog(blog);
+        } else {
+            b = blogService.updateBlog(blog.getId(), blog);
+        }
+
+        if (b == null ) {
+            attributes.addFlashAttribute("message", "操作失败");
+        } else {
+            attributes.addFlashAttribute("message", "操作成功");
         }
         return REDIRECT_LIST;
     }
