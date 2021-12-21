@@ -22,6 +22,8 @@ public interface TypeService {
     //返回所有数据
     List<Type> listType();
 
+    List<Type> listTypeTop(Integer size);
+
     //通过名称查询Type
     Type getTypeByName(String name);
 
