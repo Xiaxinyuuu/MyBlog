@@ -3,3 +3,5 @@ spring:
     mode: HTML
   profiles:
     active: dev  #指定使用哪个配置文件，使用后缀名即可
+
+comment.avatar: /images/comment.png
