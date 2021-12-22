@@ -76,7 +76,7 @@
 
             <h2 class="ui center aligned header" th:text="${blog.title}">最大公约数</h2>
             <div id="content"
-                 class="typo  typo-selection js-toc-content js-toc-content m-padded-lr-responsive m-padded-tb-large" th:text="${blog.content}">
+                 class="typo  typo-selection js-toc-content js-toc-content m-padded-lr-responsive m-padded-tb-large" th:utext="${blog.content}"> <!--utext ： 不转义-->
 
                 <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
@@ -503,7 +503,7 @@ h5,h6{font-size:1em;}
             <div class="ui middle aligned grid">
                 <!--使用middle aligned在垂直方向上的居中-->
                 <div class="eleven wide column">
-                    <li>作者：<span th:text="${blog.user.nickname}">夏新宇</span><a href="#" th:href="@{/about}" target="_blank"></a></li>
+                    <li>作者：<span th:text="${blog.user.nickname}">夏新宇</span><a href="#" th:href="@{/about}" target="_blank">联系作者</a></li>
                     <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2021-11-20</span></li>
                 </div>
                 <div class="five wide column">
@@ -698,7 +698,7 @@ h5,h6{font-size:1em;}
 <script src="../static/lib/qrcode/qrcode.min.js"></script>
 <!--/*/</th:block>/*/-->
 
-<script>
+<script th:inline="javascript">
     $('.menu.toggle').click(function () {
         $(".m-item").toggleClass('m-mobile-hide');
     });
@@ -730,8 +730,10 @@ h5,h6{font-size:1em;}
         position: 'left center'
     });
 
+    var serurl = "47.100.115.23";
+    var url = /*[[@{/blog/{id}(${blog.id})}]]*/"";
     var qrcode = new QRCode("qrcode", {
-        text: "http://jindo.dev.naver.com/collie",
+        text: serurl+url,
         width: 110,
         height: 110,
         colorDark: "#000000",

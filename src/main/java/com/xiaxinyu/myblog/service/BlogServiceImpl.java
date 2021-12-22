@@ -5,6 +5,7 @@ import com.xiaxinyu.myblog.NotFoundException;
 import com.xiaxinyu.myblog.dao.BlogRepository;
 import com.xiaxinyu.myblog.po.Blog;
 import com.xiaxinyu.myblog.po.Type;
+import com.xiaxinyu.myblog.util.MarkdownUtils;
 import com.xiaxinyu.myblog.util.MyBeanUtils;
 import com.xiaxinyu.myblog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -15,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.Transient;
 import javax.persistence.criteria.CriteriaBuilder;
@@ -74,14 +76,27 @@ public class BlogServiceImpl implements BlogService{
         return blogRepository.findTop(pageable);
     }
 
-    @Transient
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogRepository.getById(id);
+        if(blog == null){
+            throw new NotFoundException("该博客不存在");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog,b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return b;
+    }
+
+    @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
-        if(blog.getId() == null){
+        if (blog.getId() == null) {
             blog.setCreateTime(new Date());
             blog.setUpdateTime(new Date());
             blog.setViews(0);
-        }else{
+        } else {
             blog.setUpdateTime(new Date());
         }
         return blogRepository.save(blog);
@@ -91,12 +106,12 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog b = blogRepository.getById(id);
-        if(b == null){
+        if (b == null) {
             throw new NotFoundException("该博客不存在");
         }
-        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));//把blog的值赋给b,过滤blog中空值
+        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
         b.setUpdateTime(new Date());
-        return b;
+        return blogRepository.save(b);
     }
 
     @Transient
