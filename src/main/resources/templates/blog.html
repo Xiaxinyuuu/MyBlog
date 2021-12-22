@@ -50,33 +50,33 @@
             <div class="ui mini horizontal link list">
                 <!--horizontal link list 设置横向列表-->
                 <div class="item">
-                    <img src="https://s1.ax1x.com/2021/12/10/o52D1O.jpg" alt="" class="ui avatar image">
+                    <img src="https://s1.ax1x.com/2021/12/10/o52D1O.jpg" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
                     <div class="content">
-                        <a href="#" class="header">夏新宇</a>
+                        <a href="#" th:text="${blog.user.nickname}" class="header">夏新宇</a>
                     </div>
                 </div>
                 <div class="item">
-                    <i class="calendar icon"></i> 2020-12-10
+                    <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2020-12-10</span>
                 </div>
                 <div class="item">
-                    <i class="eye icon"></i> 6666
+                    <i class="eye icon"></i><span th:text="${blog.views}">6666</span>
                 </div>
             </div>
         </div>
         <div class="ui attached segment">
             <!--图片区域-->
-            <img src="https://s1.ax1x.com/2021/12/10/o52D1O.jpg" alt="" class="ui fluid rounded image">
+            <img src="https://s1.ax1x.com/2021/12/10/o52D1O.jpg" th:src="@{${blog.firstPicture}}" alt="" class="ui fluid rounded image">
         </div>
         <div class="ui attached padded segment">
             <!--内容-->
             <div class="ui right aligned basic segment">
                 <!--basic去掉segment边线-->
-                <div class="ui basic orange label">原创</div>
+                <div class="ui basic orange label" th:text="${blog.flag}">原创</div>
             </div>
 
-            <h2 class="ui center aligned header">最大公约数</h2>
+            <h2 class="ui center aligned header" th:text="${blog.title}">最大公约数</h2>
             <div id="content"
-                 class="typo  typo-selection js-toc-content js-toc-content m-padded-lr-responsive m-padded-tb-large">
+                 class="typo  typo-selection js-toc-content js-toc-content m-padded-lr-responsive m-padded-tb-large" th:text="${blog.content}">
 
                 <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
@@ -471,7 +471,7 @@ h5,h6{font-size:1em;}
 
             <!--标签-->
             <div class="m-padded-lr m-padded-lr-responsive">
-                <div class="ui basic teal left pointing label">
+                <div class="ui basic teal left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">
                     方法论
                 </div>
             </div>
@@ -483,12 +483,12 @@ h5,h6{font-size:1em;}
                 <div class="ui orange basic label">
                     <div class="ui images" style="font-size: inherit !important;">
                         <div class="image">
-                            <img src="../static/images/wcpay.png" alt="" class="ui rounded bordered image"
+                            <img src="../static/images/wcpay.png" th:src="@{/images/wcpay.png}" alt="" class="ui rounded bordered image"
                                  style="width: 120px">
                             <div>微信</div>
                         </div>
                         <div class="image">
-                            <img src="../static/images/alipay.png" alt="" class="ui rounded bordered image"
+                            <img src="../static/images/alipay.png" th:src="@{/images/alipay.png}" alt="" class="ui rounded bordered image"
                                  style="width: 120px">
                             <div>支付宝</div>
                         </div>
@@ -503,11 +503,11 @@ h5,h6{font-size:1em;}
             <div class="ui middle aligned grid">
                 <!--使用middle aligned在垂直方向上的居中-->
                 <div class="eleven wide column">
-                    <li>作者：夏新宇</li>
-                    <li>发表时间：2021-12-10</li>
+                    <li>作者：<span th:text="${blog.user.nickname}">夏新宇</span><a href="#" th:href="@{/about}" target="_blank">联系作者</a></li>
+                    <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2021-11-20</span></li>
                 </div>
                 <div class="five wide column">
-                    <img src="../static/images/wechat.png" alt="" class="ui right floated rounded bordered image"
+                    <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui right floated rounded bordered image"
                          style="width: 120px">
                 </div>
             </div>

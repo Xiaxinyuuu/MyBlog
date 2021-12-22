@@ -7,13 +7,7 @@
     <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/MyBlog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/MyBlog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/MyBlog-dev.log.2021-12-14.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/dao/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/dao/BlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaxinyu/myblog/service/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaxinyu/myblog/service/BlogServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +131,7 @@
       <workItem from="1639735999486" duration="5487000" />
       <workItem from="1639828137741" duration="7159000" />
       <workItem from="1640001963016" duration="3771000" />
-      <workItem from="1640074004634" duration="9842000" />
+      <workItem from="1640074004634" duration="11713000" />
     </task>
     <servers />
   </component>
