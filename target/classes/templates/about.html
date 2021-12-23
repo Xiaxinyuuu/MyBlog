@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <!--    设置移动端预览-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <body>
 
 <!--导航栏-->
-<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <!--        attached 去除圆角-->
     <!--        inverted 颜色反转-->
     <div class="ui container">
@@ -44,7 +44,7 @@
         <div class="ui stackable grid">
             <div class="eleven wide column">
                 <div class="ui segment">
-                    <img src="https://s1.ax1x.com/2021/12/10/o52D1O.jpg" alt="" class="ui rounded image">
+                    <img src="https://s4.ax1x.com/2021/12/22/T1NErj.png" style="max-width: 730px" alt="" class="ui rounded image">
                 </div>
             </div>
             <div class="five wide column">
@@ -54,14 +54,17 @@
                 <div class="ui attached segment">
                     <p class="m-text-thin">夏新宇</p>
                     <p class="m-text-thin">双非CS大二</p>
+                    <p class="m-text-thin">一个想通过自己的努力进入大厂的小孩儿</p>
                 </div>
                 <div class="ui attached segment">
+                    <div class="ui basic orange label m-margin-tb-tiny">个人爱好 ：</div><br>
                     <div class="ui basic orange label">编程</div>
                     <div class="ui basic orange label">读书</div>
                     <div class="ui basic orange label">思考</div>
                     <div class="ui basic orange label">打羽毛球</div>
                 </div>
                 <div class="ui attached segment">
+                    <div class="ui basic orange label m-margin-tb-tiny">技术栈 ：</div><br>
                     <div class="ui basic blue label m-margin-tb-tiny">Java</div>
                     <div class="ui basic blue label m-margin-tb-tiny">Python</div>
                     <div class="ui basic blue label m-margin-tb-tiny">Mysql</div>
@@ -71,32 +74,40 @@
                     <div class="ui basic blue label m-margin-tb-tiny">Mysql</div>
                     <div class="ui basic blue label m-margin-tb-tiny">Linux</div>
                 </div>
+                <div class="ui attached segment">
+                    <div class="ui basic orange label m-margin-tb-tiny">获奖经历 ：</div>
+                    <div class="ui basic red label m-margin-tb-tiny">第十届中国软件杯——基于百度飞浆的单多镜头行人追踪二等奖</div>
+                    <div class="ui basic red label m-margin-tb-tiny">第三届吉林省大学生人工智能创新大赛——交通指示灯识别二等奖</div>
+                    <div class="ui basic red label m-margin-tb-tiny">2021年全国大学生数学建模竞赛吉林省赛区——三等奖</div>
+                <div>
                 <div class="ui bottom attached segment">
                     <a href="#" class="ui github circular icon button " data-content="https://github.com/ThinyuXia"
                        data-position="bottom center"><i class="github icon"></i></a>
-                    <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui wechat circular icon button" data-content="15142662711" data-position="bottom center"><i class="weixin icon"></i></a>
                     <a href="#" class="ui qq circular icon button" data-content="2316683971"
                        data-position="bottom center"><i class="qq icon"></i></a>
                 </div>
                 <div class="ui wechatQR flowing popup transition hidden">
-                    <img src="../static/images/images/wechat.png" alt="" class="ui rounded image" style="width: 200px">
+                    <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded image" style="width: 200px">
                 </div>
             </div>
+
         </div>
     </div>
 </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<!--底部footer-->
-<footer class="ui inverted attached segment m-padded-tb-massive">
+
+        <!--底部footer-->
+<footer th:replace="_fragments :: footer" class="ui inverted attached segment m-padded-tb-massive">
     <div class="ui center aligned container">
         <!-- center aligned使container内的内容居中 -->
         <div class="ui inverted divided stackable grid">
@@ -104,7 +115,7 @@
             <div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
-                        <img src="../static/images/images/wechat.png" class="ui rounded image" alt="" style="width: 100px">
+                        <img src="../static//images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image" alt="" style="width: 100px">
                     </div>
                 </div>
                 <!-- ui rounded image使图片变成圆角 -->
@@ -136,8 +147,11 @@
 
 </footer>
 
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
 <script>
     $('.menu.toggle').click(function () {
         $(".m-item").toggleClass('m-mobile-hide');
@@ -150,5 +164,7 @@
         position: 'bottom center'
     });
 </script>
+
 </body>
+
 </html>
