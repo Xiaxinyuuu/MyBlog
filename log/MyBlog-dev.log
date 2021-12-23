@@ -4171,3 +4171,49 @@ java.lang.IllegalArgumentException: Cannot get array length of null
 2021-12-23 19:57:09.301  INFO 29934 --- [http-nio-8080-exec-8] com.xiaxinyu.myblog.aspect.LogAspect     : Result : tags
 2021-12-23 19:57:10.726  INFO 29934 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/tags/16', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 16, {}]}
 2021-12-23 19:57:10.733  INFO 29934 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Result : tags
+2021-12-23 20:24:49.017  INFO 29934 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-23 20:24:49.024  INFO 29934 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-23 20:24:49.033  INFO 29934 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-23 20:24:58.933  INFO 30356 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Starting MyBlogApplication using Java 1.8.0_312 on xiaxinyudeMacBook-Pro.local with PID 30356 (/Users/xiaxinyu/Desktop/github-repo/MyBlog/target/classes started by xiaxinyu in /Users/xiaxinyu/Desktop/github-repo/MyBlog)
+2021-12-23 20:24:58.933 DEBUG 30356 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-23 20:24:58.934  INFO 30356 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : The following profiles are active: dev
+2021-12-23 20:24:58.980  INFO 30356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-23 20:24:58.981  INFO 30356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-23 20:24:59.821  INFO 30356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-23 20:24:59.888  INFO 30356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2021-12-23 20:25:00.611  INFO 30356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-23 20:25:00.620  INFO 30356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-23 20:25:00.620  INFO 30356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-23 20:25:00.689  INFO 30356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-23 20:25:00.690  INFO 30356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1709 ms
+2021-12-23 20:25:00.901  INFO 30356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-23 20:25:00.931  INFO 30356 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-23 20:25:01.019  INFO 30356 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-23 20:25:01.087  INFO 30356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-23 20:25:01.088  WARN 30356 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-12-23 20:25:01.333  INFO 30356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-23 20:25:01.346  INFO 30356 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-23 20:25:02.016  INFO 30356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-23 20:25:02.022  INFO 30356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-23 20:25:02.981  WARN 30356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-23 20:25:03.246  INFO 30356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-23 20:25:03.516  INFO 30356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-23 20:25:03.557  INFO 30356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-23 20:25:03.566  INFO 30356 --- [restartedMain] com.xiaxinyu.myblog.MyBlogApplication    : Started MyBlogApplication in 5.024 seconds (JVM running for 10.801)
+2021-12-23 20:26:12.024  INFO 30356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-23 20:26:12.024  INFO 30356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-23 20:26:12.026  INFO 30356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-23 20:26:12.057  INFO 30356 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.ArchiveShowController.archives', args=[{}]}
+2021-12-23 20:26:12.146  INFO 30356 --- [http-nio-8080-exec-1] com.xiaxinyu.myblog.aspect.LogAspect     : Result : archives
+2021-12-23 20:26:34.007  INFO 30356 --- [http-nio-8080-exec-6] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.ArchiveShowController.archives', args=[{}]}
+2021-12-23 20:26:34.022  INFO 30356 --- [http-nio-8080-exec-6] com.xiaxinyu.myblog.aspect.LogAspect     : Result : archives
+2021-12-23 20:26:35.191  INFO 30356 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.ArchiveShowController.archives', args=[{}]}
+2021-12-23 20:26:35.205  INFO 30356 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Result : archives
+2021-12-23 20:26:56.917  INFO 30356 --- [http-nio-8080-exec-5] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.ArchiveShowController.archives', args=[{}]}
+2021-12-23 20:26:56.932  INFO 30356 --- [http-nio-8080-exec-5] com.xiaxinyu.myblog.aspect.LogAspect     : Result : archives
+2021-12-23 20:28:18.060  INFO 30356 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.ArchiveShowController.archives', args=[{}]}
+2021-12-23 20:28:18.084  INFO 30356 --- [http-nio-8080-exec-2] com.xiaxinyu.myblog.aspect.LogAspect     : Result : archives
+2021-12-23 20:29:34.409  INFO 30356 --- [http-nio-8080-exec-10] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.IndexController.blog', args=[22, {}]}
+2021-12-23 20:29:34.514  INFO 30356 --- [http-nio-8080-exec-10] com.xiaxinyu.myblog.aspect.LogAspect     : Result : blog
+2021-12-23 20:29:35.090  INFO 30356 --- [http-nio-8080-exec-10] com.xiaxinyu.myblog.aspect.LogAspect     : Request : {url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.xiaxinyu.myblog.web.CommentController.comments', args=[22, {}]}
+2021-12-23 20:29:35.221  INFO 30356 --- [http-nio-8080-exec-10] com.xiaxinyu.myblog.aspect.LogAspect     : Result : blog :: commentList

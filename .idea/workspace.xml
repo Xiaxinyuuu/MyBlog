@@ -7,10 +7,10 @@
     <list default="true" id="1d93f524-563e-42bd-b355-1d8074b258eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/MyBlog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/MyBlog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/dao/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/dao/BlogRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/service/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/vo/BlogQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaxinyu/myblog/vo/BlogQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/archives.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +150,7 @@
       <workItem from="1639828137741" duration="7159000" />
       <workItem from="1640001963016" duration="3771000" />
       <workItem from="1640074004634" duration="28751000" />
-      <workItem from="1640252219997" duration="5176000" />
+      <workItem from="1640252219997" duration="6968000" />
     </task>
     <servers />
   </component>

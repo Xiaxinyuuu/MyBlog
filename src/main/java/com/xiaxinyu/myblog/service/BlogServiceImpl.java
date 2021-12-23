@@ -20,9 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.Transient;
 import javax.persistence.criteria.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class BlogServiceImpl implements BlogService{
@@ -57,6 +55,11 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
+    public Long countBlog() {
+        return blogRepository.count();
+    }
+
+    @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
         return blogRepository.findByQuery(query,pageable);
     }
@@ -64,6 +67,16 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Page<Blog> listBlog(Pageable pageable) {
         return blogRepository.findAll(pageable);
+    }
+
+    @Override
+    public Map<String, List<Blog>> archiveBlog() {
+        List<String> years = blogRepository.findGroupYear();
+        Map<String,List<Blog>> map = new HashMap<>();
+        for(String year : years){
+            map.put(year,blogRepository.findByYear(year));
+        }
+        return map;
     }
 
     @Override
