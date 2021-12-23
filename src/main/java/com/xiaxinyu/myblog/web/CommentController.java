@@ -42,6 +42,7 @@ public class CommentController {
             comment.setAdminComment(true);
         }else{
             comment.setAvatar(avatar);
+            System.out.println(avatar);
         }
         commentService.saveComment(comment);
         return "redirect:/comments/" + blogId;
